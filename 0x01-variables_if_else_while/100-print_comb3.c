@@ -12,20 +12,19 @@ int	main(void)
 
 	n = '0';
 	o = '1';
-	while ((n <= '8') && (n != o))
+	while (n <= '8')
 	{
 		while (o <= '9')
 		{
-			putchar(n);
-			putchar(o);
-			if (n != '8' || o != '9')
+			if (n < o)
 			{
-				putchar(',');
-				putchar(' ');
-			}
-			if (o > n)
-			{
-				break;
+				putchar(n);
+				putchar(o);
+				if (n != '8' || o != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			o++;
 		}
