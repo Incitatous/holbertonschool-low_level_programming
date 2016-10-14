@@ -16,19 +16,19 @@ int	main(void)
 		{
 			if (i < j)
 			{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar (' ');
-			putchar (j / 10 + '0');
-			putchar (j % 10 + '0');
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
 				if (!(j == 99 && i == 98))
 				{
-					putchar (',');
-					putchar (' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
