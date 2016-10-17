@@ -4,8 +4,7 @@
 * the alphabet in lowercase
 * Return: Returns 0
 */
-int	_putchar(char c);
-int	main(void);
+#include "holberton.h"
 void	print_alphabet(void)
 {
 	char c;
