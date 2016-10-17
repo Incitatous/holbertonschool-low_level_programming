@@ -4,9 +4,7 @@
 * the alphabet 10 times
 * Return: Returns 0
 */
-int	_putchar(char c);
-int	main(void);
-void	print_alphabet(void);
+#include "holberton.h"
 void	print_alphabet_x10(void)
 {
 	int i;
