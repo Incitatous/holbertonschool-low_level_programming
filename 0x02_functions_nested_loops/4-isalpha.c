@@ -1,7 +1,8 @@
 /**
-* main - This is a function that prints a string
+* _isalpha - This is a function that prints a string
 * Description: This function checks /
 * for lower case character
+* @c: holds the value of letters
 * Return: Returns 0
 */
 #include "holberton.h"
