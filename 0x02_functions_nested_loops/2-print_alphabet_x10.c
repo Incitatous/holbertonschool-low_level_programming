@@ -1,5 +1,5 @@
 /**
-* main - This is a function that prints a string
+* print_alphabet_x10 - This is a function that prints a string
 * Description: This function prints /
 * the alphabet 10 times
 * Return: Returns 0
