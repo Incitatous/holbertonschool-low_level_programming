@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _abs - Last digit
+* print_last_digit - Last digit
 * Description: This function prints /
 * the last digit of a number
 * @i: the input
@@ -11,7 +11,7 @@ int print_last_digit(int i)
 	int j;
 	int k;
 	int l;
-	
+
 	j = (i * -10 / 10);
 	k = j % 10;
 	l = i % 10;
