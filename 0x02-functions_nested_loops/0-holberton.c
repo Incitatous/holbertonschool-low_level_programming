@@ -4,7 +4,6 @@
 * main - This is a function that prints a string
 * Description: This function prints /
 * base numbers separated by a comma and space
-* @c: holds the value of letters
 * Return: Returns 0
 */
 int	main(void)
