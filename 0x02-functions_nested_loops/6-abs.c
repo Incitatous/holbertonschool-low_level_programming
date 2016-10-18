@@ -14,7 +14,6 @@ int _abs(int i)
 	j = (i * -1);
 	if (i < 0)
 		return (j);
-	else if (i >= 0)
+	else
 		return (i);
-	return (0);
 }
