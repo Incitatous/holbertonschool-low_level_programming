@@ -5,7 +5,7 @@
 * Description: This function computes /
 * the absolute value of an integer
 * @i: the input
-* Return: Returns 0
+* Return: Returns i or j
 */
 int _abs(int i)
 {
@@ -16,4 +16,5 @@ int _abs(int i)
 		return (j);
 	else if (i >= 0)
 		return (i);
+	return (0);
 }
