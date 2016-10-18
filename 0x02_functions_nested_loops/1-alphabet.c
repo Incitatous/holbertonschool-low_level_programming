@@ -1,5 +1,5 @@
 /**
-* main - This is a function that prints a string
+* print_alphabet - This is a function that prints a string
 * Description: This function prints /
 * the alphabet in lowercase
 * Return: Returns 0
