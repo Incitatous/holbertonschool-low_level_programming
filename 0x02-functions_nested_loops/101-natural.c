@@ -8,8 +8,9 @@
 * Return: Returns 0
 */
 
-int main(int n)
+int main(void)
 {
+	int n;
 	int l;
 
 	l = 0;
