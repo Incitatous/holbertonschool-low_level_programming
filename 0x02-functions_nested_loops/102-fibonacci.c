@@ -15,13 +15,13 @@ int main(void)
 	l = 1;
 	o = 2;
 	printf("1, 2");
-	for (count = 0 ; count < 49; count++)
+	for (count = 0 ; count < 48; count++)
 	{
 		{
 			k = o + l;
 			l = o;
 			o = k;
-				if (count != 49)
+				if (count != 48)
 					printf(", ");
 			printf("%lu", k);
 		}
