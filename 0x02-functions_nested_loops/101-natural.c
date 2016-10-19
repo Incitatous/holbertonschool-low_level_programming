@@ -4,7 +4,6 @@
 * main - main function
 * Description: This program adds /
 * the natural numbers up to 1024
-* @n: holds numbers
 * Return: Returns 0
 */
 
