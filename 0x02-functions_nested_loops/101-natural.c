@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 
-
 /**
 * main - main function
 * Description: This program adds /
