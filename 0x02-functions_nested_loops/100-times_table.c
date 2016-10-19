@@ -3,6 +3,7 @@
 * print_times_table - Prints
 * Description: This function prints /
 * time tables
+* @n: holds values
 * Return: Returns 0
 */
 void print_times_table(int n)
