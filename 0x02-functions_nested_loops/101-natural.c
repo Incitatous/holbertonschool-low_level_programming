@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 
+
 /**
 * main - main function
 * Description: This program adds /
@@ -18,6 +19,7 @@ int main(void)
 		if (n % 3 == 0 || n % 5 == 0)
 			l += n;
 	}
+
 	printf("%d\n", l);
 	return (0);
 }
