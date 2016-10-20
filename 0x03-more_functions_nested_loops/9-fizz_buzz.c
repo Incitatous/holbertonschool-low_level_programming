@@ -28,6 +28,6 @@ int main(void)
 		}
 		c++;
 	}
-	printf("Fizz Buzz\n");
+	printf("Buzz\n");
 	return (0);
 }
