@@ -14,7 +14,7 @@ int main(void)
 	while (c <= 99)
 	{
 		if ((c % 5 == 0) && (c % 3 == 0))
-                        printf("FizzBuzz ");
+			printf("FizzBuzz ");
 		else if ((c % 3 == 0) && (c % 5 != 0))
 			printf("Fizz ");
 		else if ((c % 5 == 0) && (c % 3 != 0))
