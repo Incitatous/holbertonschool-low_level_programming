@@ -3,6 +3,7 @@
 * print_line - This is a function that prints a string
 * Description: This function prints /
 * a straight line in the terminal
+* @n: holds numbers
 * Return: Returns 0
 */
 void print_line(int n)
