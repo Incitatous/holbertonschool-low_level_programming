@@ -7,16 +7,18 @@
  */
 void print_number(int n)
 {
-	int expo;
-	int temp;
+	long expo;
+	long temp;
+	long temp2;
 
 	expo = 1;
+	temp2 = n;
 	if (n < 0)
 	{
-		n *= -1;
+		temp2 *= -1;
 		_putchar('-');
 	}
-	temp = n;
+	temp = temp2;
 	while ((temp / 10) > 0)
 	{
 		temp  = temp / 10;
@@ -24,7 +26,7 @@ void print_number(int n)
 	}
 	while (expo > 0)
 	{
-		_putchar((n / expo) % 10 + '0');
+		_putchar((temp2 / expo) % 10 + '0');
 		expo /= 10;
 	}
 }
