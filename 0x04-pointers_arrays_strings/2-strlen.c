@@ -1,7 +1,7 @@
 /**
- * reset_to_98 - updates the value of param to 98
+ * _strlen - Returns length of string
  * @s: pointer to string
- * Return: Always 0.
+ * Return: Length of string.
  */
 int _strlen(char *s)
 {
