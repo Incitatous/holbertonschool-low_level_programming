@@ -2,7 +2,7 @@
 
 /**
  * _atoi - converts to int
- * @s: pointer to string 
+ * @s: pointer to string
  * Return: 0 if no int
  */
 
