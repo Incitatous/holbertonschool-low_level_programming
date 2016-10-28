@@ -7,9 +7,9 @@
  */
 void print_number(int n)
 {
-	long expo;
-	long temp;
-	long temp2;
+	long long expo;
+	long long temp;
+	long long temp2;
 
 	expo = 1;
 	temp2 = n;
