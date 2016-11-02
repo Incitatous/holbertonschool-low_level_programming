@@ -2,7 +2,7 @@
 
 /**
  * factorial - returns factorial
- * @s: pointer to string
+ * @n: number passed
  * Return: factorial
  */
 int factorial(int n)
