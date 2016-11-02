@@ -12,8 +12,8 @@ int check(int i, int n)
 		return (i);
 	if ((i * i) > n)
 		return (-1);
-	if ((i * i) < n)
-		return (check(i + 1, n));
+	/*if ((i * i) < n)*/
+	return (check(i + 1, n));
 }
 
 /**
