@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _print_rev__recursion - prints a string
+ * _print_rev_recursion - prints a string
  * @s: pointer to string
  * Return: result
  */
