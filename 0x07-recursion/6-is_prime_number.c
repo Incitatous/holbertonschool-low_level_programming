@@ -19,7 +19,7 @@ int check(int i, int n)
 }
 
 /**
- * _is_prime_number - returns pn
+ * is_prime_number - returns pn
  * @n: number passed
  * Return: number x to the power y
  */
