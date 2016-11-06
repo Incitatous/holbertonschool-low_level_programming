@@ -2,7 +2,7 @@
 /**
  * main - Prints argc execpt executable
  *
- * @arc: argument count
+ * @argc: argument count
  * @argv: argument vector
  * Return: Always 0
  */

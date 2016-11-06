@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	x = y = res = 0;
 	if (argc == 3)
-	{	
+	{
 		x = atoi(argv[1]);
 		y = atoi(argv[2]);
 		res = x * y;
