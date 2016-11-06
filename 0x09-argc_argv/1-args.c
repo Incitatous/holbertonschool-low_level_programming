@@ -2,6 +2,8 @@
 /**
  * main - Prints argc execpt executable
  *
+ * @arc: argument count
+ * @argv: argument vector
  * Return: Always 0
  */
 /*specifies *argv[] as unused*/
