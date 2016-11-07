@@ -16,17 +16,16 @@ int main(int argc, char *argv[])
 	while (i < argc)
 	{
 		add = atoi(argv[i]);
-		if (argc < 1)
+		if (argc == 0)
 		{
-			printf("0\n");
+			add = 0;
 		}
 		if (add <= 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-		if (add > 0)
-			res += add;
+		res += add;
 		i++;
 	}
 	printf("%d\n", res);
