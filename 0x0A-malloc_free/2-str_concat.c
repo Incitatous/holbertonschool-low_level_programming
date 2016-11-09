@@ -18,6 +18,8 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 	result = malloc(sizeof(*s1 + *s2 - 1));
+	if (result == NULL)
+		return (NULL);
 	while (s1[i] != '\0')
 	{
 		result[k] = s1[i];
