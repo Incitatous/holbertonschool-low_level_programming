@@ -17,11 +17,13 @@ char *_strdup(char *str)
 	i++;
 	length = i;
 	if (i != 0)
-		my_array = malloc(i * sizeof(str));
+		my_array = malloc(i * sizeof(*str));
+	else
+		return (NULL);
 	if (my_array == NULL)
 		return (NULL);
 	i = 0;
-	while (i < length)
+	while (str[i] != '\0')
 	{
 		my_array[i] = str[i];
 		i++;
