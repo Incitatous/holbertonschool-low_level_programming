@@ -9,14 +9,13 @@
 char *_strdup(char *str)
 {
 	char *my_array;
-	int i, length;
+	int i;
 
-	i = length = 0;
+	i = 0;
 	while (str[i] != '\0')
 		i++;
 	i++;
-	length = i;
-	if (i != 0)
+	if (i != 1)
 		my_array = malloc(i * sizeof(*str));
 	else
 		return (NULL);
