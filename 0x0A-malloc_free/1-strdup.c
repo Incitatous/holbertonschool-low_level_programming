@@ -9,20 +9,22 @@
 char *_strdup(char *str)
 {
 	char *my_array;
-	int i;
+	int i, length;
 
-	i = 0;
+	i = length = 0;
 	while (str[i] != '\0')
 		i++;
 	i++;
+	length = i;
 	if (i != 0)
 		my_array = malloc(i * sizeof(str));
 	if (my_array == NULL)
 		return (NULL);
-	while (i >= 0)
+	i = 0;
+	while (i < length)
 	{
 		my_array[i] = str[i];
-		i--;
+		i++;
 	}
 	return (my_array);
 	free(str);
