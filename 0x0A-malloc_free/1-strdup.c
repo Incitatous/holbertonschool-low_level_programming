@@ -11,15 +11,15 @@ char *_strdup(char *str)
 	char *my_array;
 	int i;
 
+	if (str == NULL)
+		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
 		i++;
 	i++;
-	if (i != 1)
+	if (i != 0)
 		my_array = malloc(i * sizeof(*str));
 	else
-		return (NULL);
-	if (my_array == NULL)
 		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
