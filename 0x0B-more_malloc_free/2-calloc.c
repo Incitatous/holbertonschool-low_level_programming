@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings
+ * _calloc - concatenates two strings
  * @size: elements
  * @nmemb: size in bytes
- * @n: number of bytes
  * Return: result or NULL
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -16,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	my_array = malloc(nmemb * size);
 	if (size == 0 || nmemb == 0 || malloc(nmemb * size) == NULL)
 		return (NULL);
-	for(i = 0; i < (nmemb*size); i++)
+	for (i = 0; i < (nmemb * size); i++)
 		my_array[i] = 0;
 	return (my_array);
 }
