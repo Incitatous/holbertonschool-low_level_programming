@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked: allocates memory
+ * malloc_checked - allocates memory
  *
  * @b: size
  * Return:  if fail, 98
@@ -14,6 +14,6 @@ void *malloc_checked(unsigned int b)
 
 	test = malloc(b);
 	if (test == NULL)
-		exit (98);
+		exit(98);
 	return (test);
 }
