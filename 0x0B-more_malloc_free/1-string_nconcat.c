@@ -5,12 +5,12 @@
  * string_nconcat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
- * @n: number of byte
+ * @n: number of bytes
  * Return: result or NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, k;
+	unsigned int i, j, k;
 	char *result/*, *empty*/;
 
 	i = j = k = 0;
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[j] != '\0')
 		j++;
 	j++;
-	result = malloc((i + j) * sizeof(char));
+	result = malloc((i + n) * sizeof(*result));
 	if (result == NULL)
 		return (NULL);
 	i = 0;
@@ -35,13 +35,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k++;
 	}
 	j = 0;
-	while (s2[j] != '\0')
+	while (s2[j] != '\0' && j < n)
 	{
 		result[k] = s2[j];
 		j++;
 		k++;
-	if ((k - i) > n)
-		break;
 	}
 	result[k] = '\0';
 	return (result);
