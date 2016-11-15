@@ -7,6 +7,7 @@
  * @name: SE
  * @age: SE
  * @owner: SE
+ * Description: header file
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
