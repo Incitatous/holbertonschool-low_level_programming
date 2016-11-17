@@ -5,6 +5,7 @@
  * @array: SE
  * @size: SE
  * @cmp: ptr to function to compare to
+ * Return: -1 or result
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
