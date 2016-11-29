@@ -26,15 +26,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	store = *head;
 	if (*head == NULL)
 	{
+		*head = newElement;
 		return (newElement);
 	}
 	else
 	{
-		while (store != NULL)
-		{
+		while (store->next != NULL)
 			store = store->next;
-		}
 		store->next = newElement;
-		return (store);
 	}
+	return (store);
 }
