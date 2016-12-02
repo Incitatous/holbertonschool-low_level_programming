@@ -2,7 +2,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * print_listint - prints a listint_t list
+ * get_nodeint_at_index - gets a node
  * @head: node
  * @index: node index
  * Return: head
@@ -19,5 +19,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		myIndex++;
 		head = head->next;
 	}
+	if (!head)
+		return (NULL);
 	return (head);
 }
