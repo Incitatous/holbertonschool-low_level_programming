@@ -2,7 +2,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * get_nodeint_at_index - gets a node
+ * sum_listint - adds the int of the nodes
  * @head: node
  * Return: head
  */
