@@ -2,6 +2,7 @@
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  *
+ * @b: string
  * Return: Converted number or 0
  */
 unsigned int binary_to_uint(const char *b)
@@ -20,10 +21,10 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (i > 0)
 	{
-		power *= 2;
+		i--;
 		if (b[i] == '1')
 			res += power;
-		i--;
+		power *= 2;
 	}
 	return (res);
 }
