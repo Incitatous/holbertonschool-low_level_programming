@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int len, i;
 
 	i = 0;
-	len = sizeof(unsigned long int) * 8 - 1;
+	len = sizeof(unsigned long int) * 8;
 	while (len > 0)
 	{
 		if ((n & 1) != (m & 1))
