@@ -7,12 +7,13 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned  power, res;
+	unsigned int  power, res;
 	int i;
 
 	i = res = 0;
 	power = 1;
-	if (!(b[i] == '0' || b[i] == '1') ||(!b))
+	/*if (!(b[i] == '0' || b[i] == '1') || (!b))*/
+	if (!b)
 		return (0);
 	while (b[i] != '\0')
 	{
