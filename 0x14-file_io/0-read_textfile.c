@@ -23,6 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	checkCount = write(STDOUT_FILENO, buffer, count);
 	if (checkCount == -1 || (count != checkCount)
 		return (0);
+	free(buffer);
 	close(fileDescriptor);
 	return (checkCount);
 }
