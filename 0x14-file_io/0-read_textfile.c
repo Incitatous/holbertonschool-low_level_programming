@@ -24,7 +24,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-	free(buffer);
 	/* same as write(1, file, number of characters)*/
 	checkCount = write(STDOUT_FILENO, buffer, count);
 	if (checkCount == -1 || (count != checkCount))
@@ -32,6 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
+	free(buffer);
 	close(fileDescriptor);
 	return (checkCount);
 }
