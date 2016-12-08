@@ -21,8 +21,8 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	while (text_content[i] != '\0')
 		i++;
-	count = write(STDIN_FILENO, text_content, i);
-	if (count == -1)
+	count = write(fileDescriptor, text_content, i);
+	if (count == -1 || (count != i))
 		return (-1);
 	close(fileDescriptor);
 	return (1);
