@@ -1,4 +1,11 @@
 #include "holberton.h"
+/**
+ * read_textfile - reads a file and write it to sdio
+ *
+ * @filename: SE
+ * @letters: SE
+ * Return: number of letters or -1
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
