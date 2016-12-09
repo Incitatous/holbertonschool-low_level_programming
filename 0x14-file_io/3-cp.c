@@ -32,7 +32,7 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		if (store_source > 0)
 		{
-			store_dest = write(dest, buffer, (ssize_t)store_source);
+			store_dest = write(dest, buffer, /*(ssize_t)*/store_source);
 			if (store_dest == -1)
 				dprintf(STDERR_FILENO, "Can't write to %s\n", av[2]), exit(99);
 		}
