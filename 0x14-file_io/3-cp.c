@@ -25,7 +25,7 @@ int main(int ac, char **av)
 	{
 		store_source = read(source, buffer, BUFSIZE);
 		if (store_source == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);	
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		if (store_source > 0)
 		{
 			store_dest = write(dest, buffer, (ssize_t)store_source);
