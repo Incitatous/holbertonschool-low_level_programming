@@ -9,7 +9,7 @@
 int main(int ac, char **av)
 {
 	int source, dest, store_source, store_dest;
-	char buffer[1204];
+	char buffer[BUFSIZE];
 
 	if (ac != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to"), exit(97);
@@ -20,20 +20,18 @@ int main(int ac, char **av)
 	| S_IWRITE | S_IRGRP | S_IWGRP | S_IROTH);
 	if (dest == -1)
 		dprintf(STDERR_FILENO, "Can't write to %s\n", av[2]), exit(99);
-	store_source = read(source, buffer, 1204);
-	if (store_source == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
+	store_source = 1;
 	while (store_source > 0)
 	{
+		store_source = read(source, buffer, BUFSIZE);
+		if (store_source == -1)
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);	
 		if (store_source > 0)
 		{
 			store_dest = write(dest, buffer, (ssize_t)store_source);
 			if (store_dest == -1)
 				dprintf(STDERR_FILENO, "Can't write to %s\n", av[2]), exit(99);
 		}
-		store_source = read(source, buffer, 1204);
-		if (store_source == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	}
 	if (close(source) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", source), exit(100);
