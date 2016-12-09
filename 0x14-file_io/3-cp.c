@@ -9,7 +9,7 @@
 int main(int ac, char **av)
 {
 	int source, dest, store_source, store_dest;
-	char buffer[BUFSIZE];
+	char buffer[BUFFERSIZE];
 
 	if (ac != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
@@ -27,7 +27,7 @@ int main(int ac, char **av)
 	store_source = 1;
 	while (store_source > 0)
 	{
-		store_source = read(source, buffer, BUFSIZE);
+		store_source = read(source, buffer, BUFFERSIZE);
 		if (store_source == -1)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 		if (store_source > 0)
