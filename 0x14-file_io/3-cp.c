@@ -16,14 +16,14 @@ int main(int ac, char **av)
 	if (!av[1])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	if (!av[2])
-		dprintf(STDERR_FILENO, "Can't write to %s\n", av[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	source = open(av[1], O_RDONLY);
 	if (source == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	dest = open(av[2], O_WRONLY | O_TRUNC | O_CREAT, S_IREAD
 	| S_IWRITE | S_IRGRP | S_IWGRP | S_IROTH);
 	if (dest == -1)
-		dprintf(STDERR_FILENO, "Can't write to %s\n", av[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	store_source = 1;
 	while (store_source > 0)
 	{
@@ -34,7 +34,7 @@ int main(int ac, char **av)
 		{
 			store_dest = write(dest, buffer, /*(ssize_t)*/store_source);
 			if (store_dest == -1 || (store_dest != store_source))
-				dprintf(STDERR_FILENO, "Can't write to %s\n", av[2]), exit(99);
+				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 		}
 	}
 	if (close(source) == -1)
