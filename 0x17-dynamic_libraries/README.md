@@ -1,0 +1,1 @@
+Dynamic or shared libraries
