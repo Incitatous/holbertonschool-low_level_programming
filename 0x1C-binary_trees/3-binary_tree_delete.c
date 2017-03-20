@@ -1,15 +1,15 @@
 #include "binary_trees.h"
 /**
- * binary_tree_insert_left - Inserts a node on the left
+ * binary_tree_preorder - Checks whether a node is a root
  *
- * @parent: SE
- * @value: SE
- * Return: New node
+ * @tree: SE
+ * Return: Nothing
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
 	if (!tree)
 		return;
-	
-	return (newNode);
+	binary_tree_delete(tree->left);
+	binary_tree_delete(tree->right);
+	free(tree);
 }
