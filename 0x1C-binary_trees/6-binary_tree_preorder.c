@@ -2,7 +2,8 @@
 /**
  * binary_tree_preorder - Checks whether a node is a root
  *
- * @node: SE
+ * @tree: SE
+ * @func: Pointer to function
  * Return: New node
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))

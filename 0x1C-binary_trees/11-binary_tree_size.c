@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 /**
- * binary_tree_is_size - Gives the size of a (sub)tree
+ * binary_tree_size - Gives the size of a (sub)tree
  *
- * @node: SE
+ * @tree: SE
  * Return: size
  */
 size_t binary_tree_size(const binary_tree_t *tree)

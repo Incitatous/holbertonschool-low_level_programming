@@ -2,7 +2,8 @@
 /**
  * binary_tree_inorder - Inorder sort
  *
- * @node: SE
+ * @tree: SE
+ * @func: Pointer to function
  * Return: New node
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))

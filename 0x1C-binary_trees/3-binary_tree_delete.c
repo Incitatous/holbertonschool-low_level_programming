@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * binary_tree_preorder - Checks whether a node is a root
+ * binary_tree_delete - Deletes a tree
  *
  * @tree: SE
  * Return: Nothing
