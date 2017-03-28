@@ -1,9 +1,9 @@
 #include "binary_trees.h"
 /**
- * binary_tree_uncle - Returns the uncle of node
+ * binary_tree_sibling - Returns the sibling of node
  *
  * @node: SE
- * Return: Uncle or NULL
+ * Return: Sibling or NULL
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
@@ -22,7 +22,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
-	if (!node->parent)
+	if (!node->parent || !node)
 		return (NULL);
 	return (binary_tree_sibling(node->parent));
 }
